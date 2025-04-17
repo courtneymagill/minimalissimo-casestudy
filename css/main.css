@@ -3,6 +3,7 @@
     --light-gray: #E6E6E6;
     --white: #FFFFFF;
 }
+
 html {
     box-sizing: border-box;
     }
@@ -10,6 +11,9 @@ html {
     {
         box-sizing: inherit;
     }
+
+
+/* GLOBAL STYLES */
 
 body {
     font-family: "Inter", sans-serif;
@@ -19,15 +23,45 @@ body {
 }
 
 img {
-    width: 100%;
-    max-width: 992px;
+    display: block;
+}
+
+article {
+    padding-bottom: 5rem;
+    
+}
+
+article h1 {
+    font-size: 15px;
 }
 
 a {
     color: var(--black);
 }
 
-h1 {
-    font-size: 20
+h1, h2, h3 {
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: normal;
+}
+
+
+/* COMPONENTS PAGE */
+
+.component img {
+    max-width: initial;
+}
+
+.component__img {
+    border: 1px solid var(--black);
+    overflow-x: auto;
+}
+
+.component__code {
+    border: 1px solid var(--black);
+}
+
+.page-header{
+    padding-bottom: 3rem;
 }
 
