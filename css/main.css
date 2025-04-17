@@ -1,0 +1,33 @@
+:root {
+    --black: #1A1A1A;
+    --light-gray: #E6E6E6;
+    --white: #FFFFFF;
+}
+html {
+    box-sizing: border-box;
+    }
+        *, *:before, *:after 
+    {
+        box-sizing: inherit;
+    }
+
+body {
+    font-family: "Inter", sans-serif;
+    font-size: 15px;
+    line-height: 20px;
+    color: var(--black);
+}
+
+img {
+    width: 100%;
+    max-width: 992px;
+}
+
+a {
+    color: var(--black);
+}
+
+h1 {
+    font-size: 20
+}
+
