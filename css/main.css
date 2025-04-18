@@ -17,6 +17,7 @@ html {
 
 body {
     font-family: "Inter", sans-serif;
+    font-weight: 420;
     font-size: 15px;
     line-height: 20px;
     color: var(--black);
@@ -27,7 +28,7 @@ img {
 }
 
 article {
-    padding-bottom: 5rem;
+    padding-bottom: 4rem;
     
 }
 
@@ -47,6 +48,11 @@ h1, h2, h3 {
 
 
 /* COMPONENTS PAGE */
+
+.component__section--header {
+    color: var(--light-gray);
+    background-color: var(--black);
+}
 
 .component img {
     max-width: initial;
