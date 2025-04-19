@@ -101,7 +101,13 @@ svg {
     background-color: var(--black);
 }
 
+.button--light {
+    color: var(--white);
+    background-color: var(--black);
+}
+
 .button--light:hover {
+    color: var(--black);
     background-color: var(--light-gray);
 }
 
