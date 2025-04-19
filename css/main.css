@@ -5,13 +5,9 @@
 }
 
 html {
+    margin: 2rem;
     box-sizing: border-box;
-    }
-        *, *:before, *:after 
-    {
-        box-sizing: inherit;
-    }
-
+}
 
 /* GLOBAL STYLES */
 
@@ -21,15 +17,16 @@ body {
     font-size: 15px;
     line-height: 20px;
     color: var(--black);
+    display: grid;
+    gap: 2rem;
+}
+
+section {
+    display: grid;
 }
 
 img {
     display: block;
-}
-
-article {
-    padding-bottom: 4rem;
-    
 }
 
 article h1 {
@@ -38,6 +35,7 @@ article h1 {
 
 a {
     color: var(--black);
+    margin: 0;
 }
 
 h1, h2, h3 {
@@ -46,12 +44,29 @@ h1, h2, h3 {
     font-weight: normal;
 }
 
+button {
+    background-color: transparent;
+    text-transform: uppercase;
+    padding: 20px;
+    padding-right: 300px;
+    border: 1px solid var(--black);
+    display: inline-block;
+}
+
+i {
+    margin: 0;
+}
+
+svg {
+    width: 17.5px;
+}
 
 /* COMPONENTS PAGE */
 
 .component__section--header {
     color: var(--light-gray);
     background-color: var(--black);
+    padding: 1rem;
 }
 
 .component img {
@@ -67,7 +82,26 @@ h1, h2, h3 {
     border: 1px solid var(--black);
 }
 
-.page-header{
-    padding-bottom: 3rem;
+.page-description {
+    margin: 0;
+}
+
+.moon {
+    display: block;
+}
+
+.sun {
+    display: block;
+    color: var(--light-gray);
+    background-color: var(--black);
+}
+
+.button--dark:hover {
+    color: white;
+    background-color: var(--black);
+}
+
+.button--light:hover {
+    background-color: var(--light-gray);
 }
 
