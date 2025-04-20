@@ -18,15 +18,24 @@ body {
     line-height: 20px;
     color: var(--black);
     display: grid;
-    gap: 2rem;
+    gap: 3rem;
 }
 
 section {
     display: grid;
+    gap: 1rem;
+}
+
+article {
+    border: 1px solid var(--black);
+    margin-bottom: 1rem;
+    overflow-x: auto;
 }
 
 img {
     display: block;
+    max-width: 992px;
+    overflow-x: auto;
 }
 
 article h1 {
@@ -41,20 +50,7 @@ a {
 h1, h2, h3 {
     font-size: 15px;
     text-transform: uppercase;
-    font-weight: normal;
-}
-
-button {
-    background-color: transparent;
-    text-transform: uppercase;
-    padding: 20px;
-    padding-right: 300px;
-    border: 1px solid var(--black);
-    display: inline-block;
-}
-
-i {
-    margin: 0;
+    font-weight: bold;
 }
 
 svg {
@@ -62,6 +58,10 @@ svg {
 }
 
 /* COMPONENTS PAGE */
+
+.h1, .h2 {
+    font-weight: 420;
+}
 
 .component__section--header {
     color: var(--light-gray);
@@ -71,11 +71,6 @@ svg {
 
 .component img {
     max-width: initial;
-}
-
-.component__img {
-    border: 1px solid var(--black);
-    overflow-x: auto;
 }
 
 .component__code {
@@ -96,6 +91,19 @@ svg {
     background-color: var(--black);
 }
 
+
+
+ /* BUTTONS*/
+
+ button {
+    background-color: transparent;
+    text-transform: uppercase;
+    padding: 20px;
+    padding-right: 300px;
+    border: 1px solid var(--black);
+    display: inline-block;
+}
+
 .button--dark:hover {
     color: white;
     background-color: var(--black);
@@ -109,5 +117,10 @@ svg {
 .button--light:hover {
     color: var(--black);
     background-color: var(--light-gray);
+}
+
+.component__img--cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 
