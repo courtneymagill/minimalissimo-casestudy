@@ -83,7 +83,7 @@ svg {
 }
 
 .component__code {
-    border: 1px solid var(--black);
+    outline: 1px solid var(--black);
 }
 
 .page-description {
@@ -111,8 +111,9 @@ button {
     text-transform: uppercase;
     padding: 20px;
     padding-right: 300px;
-    border: 1px solid var(--black);
-    display: inline-block;
+    outline: 1px solid var(--black);
+    border: none;
+    display: inline-flex;
 }
 
 .button--dark:hover {
@@ -130,9 +131,36 @@ button {
     background-color: var(--light-gray);
 }
 
+.button__text{
+    padding-left: .25rem;
+}
+
 /*Product cards*/
 .component__img--cards{
     display: inline-flex;
+}
+
+.card__image {
+    margin: auto;
+    width: 100%;
+    max-width: 522px;
+    max-height: 522px;
+}
+
+.card {
+    outline: solid .25px var(--black);
+    max-width: 642px;
+    margin-bottom: 0;
+}
+
+.card__text {
+    padding: 20px;
+    color: var(--white);
+    margin: 0;
+}
+
+.card:hover {
+    background-color: var(--black);
 }
 
 
@@ -140,27 +168,76 @@ button {
 
 div.cover-section {
     display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 2fr 1fr 2fr;
-        gap: 1px;
-        padding: 0;
-        margin: 0;
-        border-collapse: collapse;
-    }
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr 1fr 2fr;
+    gap: 1px;
+    padding: 0;
+    margin: 0;
+    border-collapse: collapse;
+}
 
 .form {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 1px;
+    display: flex;
     outline: solid 1px var(--black);
+    align-items: center;
+    padding-left: 5px;
+    text-transform: uppercase;
 }
 
 .newsletter {
     outline: solid 1px var(--black);
 }
 
+.cover-section__text {
+    padding-left: 20px;
+}
+
+
+
 .button--subscribe {
+    all: unset;
+    flex: 1 1 0;
     border: none;
     border-left: solid 1px var(--black);
+    text-align: center;
+    justify-content: center;
+    padding: 20px;
+    text-transform: uppercase;
 }
+
+label {
+    flex: 1 1 0;
+    min-width: 50%;
+    background-color: white;
+    align-content: center;
+    padding-left: 1rem;
+    color:rgb(110, 110, 110);
+    padding-left: 1rem;
+}
+
+.cover-section__h1 {
+    align-self: center;
+    padding: 20px;
+}
+
+
+/*HEADER*/
+
+div.header {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.header__h1 {
+    padding: 20px;
+    margin: 0;
+    min-width: 300px;
+    outline: 1px solid var(--black);
+}
+
+.button--menu {
+    outline: none;
+    text-transform: uppercase;
+}
+
 
