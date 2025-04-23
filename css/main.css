@@ -16,7 +16,7 @@ html {
 
 body {
     font-family: "Inter", sans-serif;
-    font-weight: 420;
+    font-weight: 400;
     font-size: 15px;
     line-height: 20px;
     color: var(--black);
@@ -37,7 +37,6 @@ article {
 
 img {
     display: block;
-    max-width: initial;
 }
 
 article h1 {
@@ -47,6 +46,7 @@ article h1 {
 a {
     color: var(--black);
     margin: 0;
+    text-decoration: none;
 }
 
 h1, h2, h3 {
@@ -84,6 +84,7 @@ svg {
 
 .component__code {
     outline: 1px solid var(--black);
+    overflow:auto;
 }
 
 .page-description {
@@ -144,7 +145,6 @@ button {
     margin: auto;
     width: 100%;
     max-width: 522px;
-    max-height: 522px;
 }
 
 .card {
@@ -240,4 +240,28 @@ div.header {
     text-transform: uppercase;
 }
 
+/*FOOTER*/
+
+div.footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 200px 20px;
+    line-height: 25px;
+    gap: 20px;
+}
+
+dt {
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}
+
+dd {
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.footer__about-description {
+    text-transform: none;
+    min-width: 250px;
+}
 
