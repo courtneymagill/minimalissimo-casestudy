@@ -1,0 +1,288 @@
+:root {
+    --black: #1A1A1A;
+    --light-gray: #E6E6E6;
+    --white: #FFFFFF;
+}
+
+html {
+    margin: 2rem;
+    box-sizing: border-box;
+    max-width: 1280px;
+    margin: auto;
+    padding: 1rem;
+}
+
+/* GLOBAL STYLES */
+
+body {
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+    color: var(--black);
+    display: grid;
+    gap: 3rem;
+}
+
+section {
+    display: grid;
+    gap: 1rem;
+}
+
+article {
+    border: 1px solid var(--black);
+    margin-bottom: 1rem;
+    overflow-x: auto;
+}
+
+img {
+    display: block;
+}
+
+article h1 {
+    font-size: 15px;
+}
+
+a {
+    color: var(--black);
+    margin: 0;
+    text-decoration: none;
+}
+
+h1, h2, h3 {
+    font-size: 15px;
+    text-transform: uppercase;
+    line-height: 20px;
+}
+svg {
+    width: 17.5px;
+    display: block;
+}
+
+.h1, .h2 {
+    font-weight: 420;
+    text-transform: uppercase;
+}
+
+.component__section--header {
+    color: var(--light-gray);
+    background-color: var(--black);
+    padding: 1.5rem;
+    margin-bottom: 0;
+}
+
+.component__name {
+    background-color: var(--light-gray);
+    padding: 1rem;
+    margin-top: 0;
+    outline: solid 1px var(--black);
+}
+
+.component__img {
+    overflow-x: auto;
+}
+
+.component__code {
+    outline: 1px solid var(--black);
+    overflow:auto;
+}
+
+.page-description {
+    margin: 0;
+}
+
+
+/*ICONS*/
+
+.moon {
+    display: block;
+}
+
+.sun {
+    display: block;
+    color: var(--light-gray);
+    background-color: var(--black);
+}
+
+
+/* BUTTONS*/
+
+button {
+    background-color: transparent;
+    text-transform: uppercase;
+    padding: 20px;
+    padding-right: 300px;
+    outline: 1px solid var(--black);
+    border: none;
+    display: inline-flex;
+}
+
+.button--dark:hover {
+    color: white;
+    background-color: var(--black);
+}
+
+.button--light {
+    color: var(--white);
+    background-color: var(--black);
+}
+
+.button--light:hover {
+    color: var(--black);
+    background-color: var(--light-gray);
+}
+
+.button__text{
+    padding-left: .25rem;
+}
+
+
+/*COVER SECTION*/
+
+div.cover-section {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr 1fr 2fr;
+    gap: 1px;
+    padding: 0;
+    margin: 0;
+    border-collapse: collapse;
+}
+
+.form {
+    display: flex;
+    outline: solid 1px var(--black);
+    align-items: center;
+    padding-left: 5px;
+    text-transform: uppercase;
+}
+
+.newsletter {
+    outline: solid 1px var(--black);
+}
+
+.cover-section__text {
+    padding-left: 20px;
+}
+
+
+
+.button--subscribe {
+    all: unset;
+    flex: 1 1 0;
+    border: none;
+    border-left: solid 1px var(--black);
+    text-align: center;
+    justify-content: center;
+    padding: 20px;
+    text-transform: uppercase;
+}
+
+label {
+    flex: 1 1 0;
+    min-width: 50%;
+    background-color: white;
+    align-content: center;
+    padding-left: 1rem;
+    color:rgb(110, 110, 110);
+    padding-left: 1rem;
+}
+
+.cover-section__h1 {
+    align-self: center;
+    padding: 20px;
+}
+
+
+/*HEADER*/
+
+div.header {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.header__h1 {
+    padding: 20px;
+    margin: 0;
+    min-width: 300px;
+    outline: 1px solid var(--black);
+}
+
+.button--menu {
+    outline: none;
+    text-transform: uppercase;
+}
+
+/*FOOTER*/
+
+div.footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 200px 20px;
+    line-height: 25px;
+    gap: 20px;
+}
+
+dt {
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}
+
+dd {
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.footer__about-description {
+    text-transform: none;
+    min-width: 250px;
+}
+
+
+/*PRODUCT CARDS*/
+
+.component__img--cards{
+    display: inline-flex;
+}
+
+.card__image {
+    margin: auto;
+    width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: contain;
+    max-width: 522px;
+}
+
+.card {
+    outline: solid .25px var(--black);
+    max-width: 642px;
+    margin-bottom: 0;
+}
+
+.card__text {
+    padding: 20px;
+    color: var(--white);
+    margin: 0;
+}
+
+.card:hover {
+    background-color: var(--black);
+}
+
+
+div.product-cards {
+    display: grid;
+    grid-template-columns: (auto-fit, minmax(300px, 1fr));
+    background-color: var(--black);
+    gap: 1px;
+}
+
+.product-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--white);
+    padding: 20px;
+    align-content: center;
+}
+
