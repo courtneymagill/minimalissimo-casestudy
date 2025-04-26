@@ -21,7 +21,7 @@ body {
     line-height: 20px;
     color: var(--black);
     display: grid;
-    gap: 3rem;
+    gap: 3.5rem;
 }
 
 section {
@@ -73,7 +73,7 @@ svg {
 .component__section--header {
     color: var(--light-gray);
     background-color: var(--black);
-    padding: 1.5rem;
+    padding: 2rem;
     margin-bottom: 0;
 }
 
