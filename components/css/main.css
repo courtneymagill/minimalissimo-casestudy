@@ -286,8 +286,60 @@ div.product-cards {
     padding: 0 40px;
 }
 
+.product-card:hover {
+    background-color: var(--black);
+    color: var(--light-gray);
+}
+
 .product-card img {
     max-width: 100%;
     aspect-ratio: 1/1;
     object-fit: contain;
+}
+
+.card__text {
+    font-weight: 400;
+    color: var(--black);
+    padding-left: 10px;
+}
+
+
+/*NORDIC KNOTS PRODUCT CARD*/
+
+.product-card--nordic {
+    display: grid;
+    padding: 0;
+}
+
+.product-card--nordic:hover {
+    color: var(--light-gray);
+}
+
+div.product-card__img--nordic {
+    padding: 10px 40px;
+}
+
+.product-card--nordic img {
+    display: block;
+    max-width: 100%;
+    object-fit: contain;
+    aspect-ratio: 1/1;
+}
+
+div.card__text--nordic {
+    border-top: 1px solid black;
+    border-collapse: collapse;
+    display: flex;
+    align-content: space-between;
+    justify-content:space-between
+}
+
+.card__text--nordic {
+    font-weight: 400;
+    padding-left: 10px;
+}
+
+.svg--nordicknots {
+    outline: black 1px solid;
+    padding: 20px;
 }
