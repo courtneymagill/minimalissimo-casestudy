@@ -30,7 +30,7 @@
                 alt= "body copy">
             </div>
             <div class="component__code">
-                <p>The Minimalissimo newsletter is sponsored by <a href="#">aprile, the hanging chair.</a></p>
+                <p>The Minimalissimo newsletter is sponsored by <a href="#" class="body__link">aprile, the hanging chair.</a></p>
             </div>
         </article>
 
@@ -59,7 +59,7 @@
                 alt= "text link">
             </div>
             <div class="component__code">
-                <p><a href="#">aprile, the hanging chair.</a></p>
+                <p><a class="body__link" href="#">aprile, the hanging chair.</a></p>
             </div>
         </article>
     </section>
@@ -183,8 +183,10 @@
             </div>
 
             <div class="component__code header">
-                <h1 class="h1 header__h1">Minimalissimo</h1>
-                <button class="button--menu">Menu</button>
+                <a href="#">
+                    <h1 class="h1 header__h1">Minimalissimo</h1>
+                </a>
+                    <button class="button--menu button--dark">Menu</button>
                 <button class="button--dark">
                     <span class="button__icon">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
@@ -212,10 +214,10 @@
                     <p class="cover-section__text">STAY UP TO DATE</p>
                     <form class="form">
                         <label>Enter your email</label>
-                        <button class="button--subscribe">Subscribe</button>
+                        <button class="button--subscribe button--dark">Subscribe</button>
                     </form>
                 </div>
-                <p class="cover-section__text">The Minimalissimo newsletter is sponsored by <a href="#">aprile, the hanging chair</a>.</p>
+                <p class="cover-section__text">The Minimalissimo newsletter is sponsored by <a class="body__link" href="#">aprile, the hanging chair</a>.</p>
             </div>
         </article>
 
@@ -226,22 +228,22 @@
                 src="images/products/products.png"
                 alt= "button with light theme">
             </div>
-
             <div class="product-cards">
                 <div class="product-card">
                     <h2 class="card__text">&nbsp;</h2>
-                    <img src="../images/archive.jpg">
+                    <img src="../images/archive.jpg" alt="archive from 2009-2024">
                     <h2 class="card__text">&nbsp;</h2>
                 </div>
                 <div class="product-card">
-                    <h2 class="card__text">&nbsp;</h2>
-                    <img src="../images/LSC-chair.jpg">
-                    <h2 class="card__text">&nbsp;</h2>
+                    <h2 class="card__text">lsc 201803 chair</h2>
+                    <img src="../images/LSC-chair.jpg" alt="metal chair by Hyumgshin Hwamg">
+                    <h2 class="card__text">Hyungshin Hwang</h2>
                 </div>
+                <a class="nordic" href="#">
                 <div class="product-card product-card--nordic">
-                    <h2 class="card__text">Nordic Knots: Rugs Inspired by Scandinavia</h2>
+                        <h2 class="card__text--nordic-top">Nordic Knots: Rugs Inspired by Scandinavia</h2>
                     <div class="product-card__img--nordic">
-                        <img class="product-card__img--nordic" src="../images/nordic-knots.jpg">
+                        <img class="product-card__img--nordic" src="../images/nordic-knots.jpg" alt="living room designed by Nordic Knots">
                     </div>
                     <div class="card__text--nordic">
                         <h2 class="card__text--nordic">Explore Homewares at nordicknots.com</h2>
@@ -250,6 +252,7 @@
                         </svg> 
                     </div>
                 </div>
+            </a>
             </div>
         </article>
 

@@ -50,11 +50,16 @@ a {
     text-decoration: none;
 }
 
+.body__link {
+    text-decoration: underline;
+}
+
 h1, h2, h3 {
     font-size: 15px;
     text-transform: uppercase;
     line-height: 20px;
 }
+
 svg {
     width: 17.5px;
     display: block;
@@ -133,7 +138,7 @@ button {
     background-color: var(--light-gray);
 }
 
-.button__text{
+.button__text {
     padding-left: .25rem;
 }
 
@@ -209,6 +214,10 @@ div.header {
     outline: 1px solid var(--black);
 }
 
+.header__h1:hover {
+    background-color: var(--black);
+    color: var(--light-gray);
+}
 .button--menu {
     outline: none;
     text-transform: uppercase;
@@ -283,7 +292,7 @@ div.product-cards {
     background-color: var(--white);
     align-content: center;
     justify-self: center;
-    padding: 0 40px;
+    padding: 0 45px;
 }
 
 .product-card:hover {
@@ -299,8 +308,7 @@ div.product-cards {
 
 .card__text {
     font-weight: 400;
-    color: var(--black);
-    padding-left: 10px;
+    margin: 0;
 }
 
 
@@ -309,9 +317,10 @@ div.product-cards {
 .product-card--nordic {
     display: grid;
     padding: 0;
+    color: var(--black);
 }
 
-.product-card--nordic:hover {
+div.product-card--nordic:hover {
     color: var(--light-gray);
 }
 
@@ -331,15 +340,24 @@ div.card__text--nordic {
     border-collapse: collapse;
     display: flex;
     align-content: space-between;
-    justify-content:space-between
+    justify-content:space-between;
+    padding-left: 10px;
+    align-items: center;
 }
 
 .card__text--nordic {
     font-weight: 400;
+    line-height: 20px;
     padding-left: 10px;
+}
+
+.card__text--nordic-top {
+    font-weight: 400;
+    padding-left: 20px;
+    padding-top: 20px;
 }
 
 .svg--nordicknots {
     outline: black 1px solid;
-    padding: 20px;
+    padding: 24px;
 }
