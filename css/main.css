@@ -18,15 +18,27 @@ body {
 
 h1, h2, h3 {
     text-transform: uppercase;
+    font-weight: 420;
+    font-size: 15px;
+    margin: 0;
+    padding: 0;
 }
 
 img {
     max-width: 100%;
+    display: block;
+    margin: auto;
+    
 }
 
 a {
     text-decoration: none;
     color: var(--black);
+}
+
+svg {
+    display: block;
+    width: 17.5px;
 }
 
 
@@ -49,9 +61,9 @@ a {
     color: var(--white);
     align-content: center;
     display: grid;
-    justify-items: center;
-    padding: 0 3rem;
+    justify-items: start;
     outline: 1px solid var(--black);
+    padding: 1rem;
 }
 
 .product-card:hover {
@@ -61,6 +73,41 @@ a {
 .card__img {
     aspect-ratio: 1/1;
     object-fit: contain;
+    padding: 2rem;
+}
+
+.card__text {
+    display: block;
+    padding-left: 1rem;
+}
+
+.card__text--bottom {
+    text-transform: none;
+}
+
+/*--NORDIC KNOT PRODUCT CARD--*/
+
+.product-card--nordic-knots {
+    color: var(--black);
+    padding: 0;
+    display: grid;
+}
+
+.card__text--bottom--nordicknots {
+    text-transform: uppercase;
+}
+
+.nordic-knots__text-container--bottom {
+    display: flex;
+    align-content: space-between;
+    justify-content:space-between;
+    align-items: center;
+    outline: 1px solid black;
+}
+
+.svg--nordicknots {
+    outline: black solid 1px;
+    height: 25px;
 }
 
 
