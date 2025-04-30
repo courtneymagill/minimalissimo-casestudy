@@ -41,12 +41,57 @@ svg {
     width: 17.5px;
 }
 
+button {
+    all: unset;
+    background-color: transparent;
+    text-transform: uppercase;
+}
+
 
 /*----------HEADER----------*/
     header {
+        border: 1px solid black;
+        position: sticky;
+        top: 0;
+    }
+
+    .header__nav {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 1px;
+        background-color: var(--black);
+    }
+
+    .header__nav h1 {
+        font-size: 15px;
+        margin: 0;
+    }
+
+    .header__nav > * {
+        background-color: white;
+        padding: 1rem;
+    }
+
+    .header__minimalissimo {
         background-color: var(--white);
     }
 
+    .header__menu {
+        text-transform: uppercase;
+        background-color: var(--white);
+    }
+
+    .header__theme {
+        display: flex;
+        align-self: center;
+        background-color: var(--white);
+        padding: 1.25rem;
+    }
+
+    .header__nav :hover {
+        color: white;
+        background-color: black;
+    }
 
 /*----------PRODUCT CARDS----------*/
 
