@@ -51,7 +51,8 @@ button {
 /*----------HEADER----------*/
     header {
         border: 1px solid black;
-        position: sticky;
+        position: fixed;
+        width: 100%;
         top: 0;
     }
 
