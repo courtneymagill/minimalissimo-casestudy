@@ -92,7 +92,57 @@ button {
         color: white;
         background-color: black;
     }
+/*----------COVER SECTION----------*/
 
+.cover {
+    background-color: var(--white);
+    text-align: left;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 3.5fr 1fr 3fr;
+    text-transform: uppercase;
+}
+
+.cover__h1 {
+    font-size: 15px;
+    grid-column-start: 2;
+    padding-left: 1rem;
+    align-self: center;
+}
+
+.cover__p--form {
+    grid-column-start: 1;
+    margin: 0;
+    border: 1px solid var(--black);
+    padding: 1rem;
+}
+
+.cover__form {
+    border: 1px solid var(--black);
+    border-left: none;
+    padding: 1rem;
+}
+
+.cover__button {
+    border: 1px solid var(--black);
+    border-left: none;
+    padding: 1rem;
+    text-transform: uppercase;
+}
+
+.cover__p--sponsor {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    text-transform: none;
+    padding-top: 1rem;
+    padding-left: 1rem;
+    outline: 1px solid var(--black);
+    margin: 0;
+}
+
+.cover__p--sponsor a {
+    text-decoration: underline;
+}
 /*----------PRODUCT CARDS----------*/
 
 .product-cards /*product grid*/ {
