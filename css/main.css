@@ -59,6 +59,7 @@ button {
     .header__nav {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
+        grid-auto-rows: 1fr;
         gap: 1px;
         background-color: var(--black);
     }
@@ -183,27 +184,39 @@ button {
 
 /*--NORDIC KNOT PRODUCT CARD--*/
 
-.product-card--nordic-knots {
+.product-card--nordic {
     color: var(--black);
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    height: 100%;
     padding: 0;
-    display: grid;
+    justify-content: space-between;
 }
 
-.card__text--bottom--nordicknots {
-    text-transform: uppercase;
+.card__text--nordic {
+    color: var(--black);
+}
+
+.card__text--nordic-top {
+    padding: 1rem;
+}
+
+.card__img--nordic {
+    aspect-ratio: 4/3;
+    margin: auto;
+    padding: 1 2rem;
 }
 
 .nordic-knots__text-container--bottom {
-    display: flex;
-    align-content: space-between;
-    justify-content:space-between;
-    align-items: center;
-    outline: 1px solid black;
+    border-top: 1px solid black;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    padding: 1rem;
 }
 
 .svg--nordicknots {
-    outline: black solid 1px;
-    height: 25px;
+    color: var(--black);
 }
 
 
