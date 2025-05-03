@@ -61,6 +61,7 @@ button {
 
 
 /*----------HEADER----------*/
+
     header {
         border: 1px solid black;
         position: fixed;
@@ -222,6 +223,8 @@ button {
 .cover__p--sponsor a {
     text-decoration: underline;
 }
+
+
 /*----------PRODUCT CARDS----------*/
 
 .product-cards /*product grid*/ {
@@ -258,6 +261,7 @@ button {
 .card__text--bottom {
     text-transform: none;
 }
+
 
 /*--NORDIC KNOT PRODUCT CARD--*/
 
